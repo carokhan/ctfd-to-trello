@@ -23,6 +23,3 @@ password: [your_password]
 - Get a Trello API key and token, put them in .secret.yaml
 - Run the program! 
 
-
-https://user-images.githubusercontent.com/97716935/164838030-282d1aa0-0469-424c-9c15-fc14c59d47c4.mp4
-
