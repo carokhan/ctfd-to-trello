@@ -1,6 +1,9 @@
 # ctfd-to-trello
 CTFd scraper putting challenges onto Trello
 
+## Demo
+![demo](trelloctfddemo2.mp4)
+
 ## Installation
 - Clone the repo
 - pip install -r requirements.txt
