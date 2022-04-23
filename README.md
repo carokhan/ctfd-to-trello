@@ -8,7 +8,7 @@ CTFd scraper putting challenges onto Trello
 ## Usage
 - Create a new board on Trello with a card called "scraper_config"
 - The card description should be:
-[My image](https://github.com/hcpssaurava/ctfd-to-trello/blob/main/ksnip_20220422-074910.png?raw=true)
+(ksnip_20220422-074910.png)
 domain: [domain_url]
 username: [your_username]
 password: [your_password]
