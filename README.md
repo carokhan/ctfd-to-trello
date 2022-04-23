@@ -2,7 +2,8 @@
 CTFd scraper putting challenges onto Trello
 
 ## Demo
-![demo](trelloctfddemo2.mp4)
+https://user-images.githubusercontent.com/97716935/164838036-d7adb6ad-d6cf-44b8-869d-04d156a6b934.mp4
+
 
 ## Installation
 - Clone the repo
@@ -12,7 +13,7 @@ CTFd scraper putting challenges onto Trello
 - Create a new board on Trello with a card called "scraper_config"
 - The card description should be:
 
-![scraper_config example](ksnip_20220422-074910.png)
+![config_screenshot](https://user-images.githubusercontent.com/97716935/164838049-622d4642-d733-43b7-a44d-66e2dd6d2f3f.png)
 
 domain: [domain_url]
 username: [your_username]
@@ -21,3 +22,7 @@ password: [your_password]
 
 - Get a Trello API key and token, put them in .secret.yaml
 - Run the program! 
+
+
+https://user-images.githubusercontent.com/97716935/164838030-282d1aa0-0469-424c-9c15-fc14c59d47c4.mp4
+
