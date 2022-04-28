@@ -12,7 +12,6 @@ def login(config, session):
     nonceres = session.get(urljoin(config["domain"], '/login'))
     nonce = re.search('name="nonce"(?:[^<>]+)?value="([0-9a-f]{64})"', nonceres.text).group(1)
     res = session.post(urljoin(config["domain"], '/login'), data={"name": config["username"], "password": config["password"], "nonce": nonce}) 
-
     if "success" in session.get(config["domain"] + '/api/v1/users/me').text:
         print("Successful login!")
     elif 'incorrect' in res.text:
@@ -27,11 +26,11 @@ with open('.secret.yaml') as f:
     data = yaml.load(f, Loader=yaml.FullLoader)
     
 client = TrelloClient(api_key=data["TRELLO_API_KEY"], token=data["TRELLO_TOKEN"])
-recentBoard = client.list_boards()[-1]
-allowed = int(input("Is this board correct? " + recentBoard.name + " (0 - No/1 - Yes) "))
-if allowed != 1:
-    print("Quitting...")
-    os._exit(0)
+boards = client.list_boards()
+for x in range(len(boards)):
+    print(str(x) + " | " + boards[x].name)
+board = int(input("Which board would you like to choose? "))
+recentBoard = boards[board]
 
 for card in recentBoard.all_cards():
     if card.name == "scraper_config":
