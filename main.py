@@ -99,7 +99,3 @@ for chal in tqdm(result, "Uploading to Trello"):
 
 recentBoard.add_list("Solving", pos=2)
 recentBoard.add_list("Solved!", pos=3)
-
-
-
-
